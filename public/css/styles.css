@@ -5,12 +5,13 @@ header img.logo{
     padding: 20px;
 }
 
-header form p{
-    margin: 0px 10px;
-    padding: 3px 0;
+header form{
+    display: flex;
 }
+
 header nav ul{
     margin: 15px 0;
+    display: none;
 }
 header nav li a{
     color: rgb(0, 0, 0);
@@ -19,17 +20,25 @@ header nav li a{
 header form a{
     background-color: #FFFFFF;
     border: 1px solid #666;
-    padding: 1px;
     border-radius: 2px;
-    margin: 0px 10px;
     color: black;
+    margin-left:2px;
+}
+header form p input{
+    display: flex;
+
 }
 header p.compra{
     margin: 0 ;
     padding: 10px;
     text-align: center;
 }
-header a.btn-burger{
+
+header nav{
+    padding: 5px;
+}
+
+header nav a.btn-burger{
     width: 45px;
     padding: 5px;
     background-color: #1259c3;
@@ -39,7 +48,36 @@ header a.btn-burger{
     margin: 0 auto 30px;
     text-align: center;
     border-radius: 5px;
+    
 }
+
+main article div{
+    margin: 10px 0;
+}
+
+main article div img{
+    width: 100%;
+    border-top: 1px solid #ebebeb ;
+}
+main section article h4{
+    display: none;
+}
+
+main  img.banner{
+    width: 100%;
+}
+
+main section .descuento {
+    color: green;
+}
+main section div.carrito{
+    color: green;
+    border: 2px solid green;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 footer{
     background-color: white;
 }
@@ -61,4 +99,37 @@ footer section{
 footer p{
 color: #666;
 padding: 0px 5px 20px;
+}
+
+@media  (min-width: 361px){
+    main section article h4{
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+    }
+    header nav a.btn-burger{
+        display: none;
+    }
+    header nav ul{
+        display: block;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+@media (min-width: 769px) {
+    main section article h4{
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+    }
+    header nav a.btn-burger{
+        display: none;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
 }
