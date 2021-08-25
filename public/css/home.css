@@ -32,7 +32,7 @@ main article div {
       padding: 15px;
   }
   
-  main section div.descripcion i {
+  main section article div.descripcion i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -45,6 +45,11 @@ main article div {
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: all ease .3s;
+  }
+  main section article:hover div.descripcion i{
+    box-shadow: 0 0 5px #39b54a;
+    transform: rotate(360deg);
   }
   main section div.descripcion div.precio-descuento {
     display: flex;
@@ -66,9 +71,7 @@ main article div {
       margin: 0;
       padding: 15px 0;
     }
-    main section article {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    
   }
 
   @media (min-width: 768px) {
@@ -76,7 +79,6 @@ main article div {
         justify-content: space-around;
     }
     main section article {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
       width: 40%;
       
     }
@@ -87,8 +89,23 @@ main article div {
           justify-content: space-between;
       }
       main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 20%;
+        transition: all ease .3s;
+      }
+      main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+
+     
+      main section article h4{
+        height: 0;
+        transition: all ease .3s;
+        overflow: hidden;
+      }
+      main section article:hover h4{
+        height: 20px;
+        margin-top: 10px;
+
       }
     
 }

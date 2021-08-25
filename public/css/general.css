@@ -36,3 +36,17 @@ main{
     margin: 0 auto;
     background-color: #ebebeb;
 }
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+.btn-rojo {
+    background-color: red;
+}
+.btn-verde {
+    background-color: #30B543;
+}
