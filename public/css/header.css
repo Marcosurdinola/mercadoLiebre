@@ -22,6 +22,10 @@ header .logo-search .search{
   
 header div.search form{
     display: flex;
+    width: 100%;
+}
+header div.search form input{
+    width: 100%;
 }
 header nav{
     display: none;
